@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title:  "Smart Dimmers & Remote Controllers",
       desc:   "Upgrade old switches to smart dimmers, remote wall controllers, or voice-compatible switches. Compatible with Lutron, Leviton, and all major smart home platforms including Google Home, Apple HomeKit, and Amazon Alexa.",
       hint:   "Dimmers &amp; Remotes · Smart Home Compatible",
-      photo:  "photos/__dimmer.png",
+      photo:  "photos/dimmer.png",
       icon:   "🎛️",
       alt:    "Smart dimmer and remote switch installation San Diego"
     },
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title:  "Smoke & Carbon Monoxide Detectors",
       desc:   "California law requires hardwired, interconnected smoke and CO detectors in all homes. We install, replace, and bring your home to current CA residential code — keeping your family protected and your home insurable.",
       hint:   "Smoke &amp; CO Detectors · CA Code Compliant",
-      photo:  "photos/smoke-detect.png",
+      photo:  "photos/smoke-detect.jpg",
       icon:   "🔴",
       alt:    "Smoke and carbon monoxide detector installation San Diego"
     },
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title:  "EV Charger Installation",
       desc:   "Level 2 home EV charger installs (240V) for Tesla, Ford, GM, Rivian, and all EVs. We pull all permits, handle SDG&E interconnection, and help you maximize state and federal rebate eligibility.",
       hint:   "EV Chargers · Level 2 · All Makes &amp; Models",
-      photo:  "photos/__ev-charger.jpg",
+      photo:  "photos/ev-charger.jpg",
       icon:   "🔌",
       alt:    "Level 2 EV charger installation San Diego"
     },
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title:  "RV & Trailer Electrical Service",
       desc:   "Dedicated 30A and 50A hookup installs for RVs, travel trailers, fifth wheels, and boat trailers at your home or property. We run the circuit, install the correct outlet, and permit everything to code.",
       hint:   "RV &amp; Trailer Power · 30A &amp; 50A Hookups",
-      photo:  "photos/__rv.jpg",
+      photo:  "photos/rv.jpg",
       icon:   "🚐",
       alt:    "RV and trailer electrical hookup installation San Diego"
     },
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title:  "Electrical Panel Upgrades",
       desc:   "100A to 200A upgrades, subpanel installs, and full panel replacements. Essential for EV chargers, solar, and most older San Diego homes. We pull all permits and manage the full inspection process — start to finish.",
       hint:   "Panel Upgrades · Permits Pulled &amp; Inspected",
-      photo:  "photos/__panel.jpg",
+      photo:  "photos/panel.jpg",
       icon:   "🗄️",
       alt:    "Electrical panel upgrade San Diego 100 amp to 200 amp"
     }
