@@ -337,6 +337,117 @@
     </div>
   </section>
 
+  <section class="service-areas" id="service-areas">
+    <h2>Service Areas</h2>
+    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg"
+     style="width:100%;max-width:700px;display:block;margin:auto;">
+
+  <!-- ====== STYLES ====== -->
+  <style>
+    /* Background */
+    .map-bg { fill:#050505; }
+
+    /* Base counties */
+    .county {
+      fill:#FFC400; /* SCBE yellow */
+      stroke:#000;
+      stroke-width:2;
+      filter:url(#county-glow);
+      transition:fill 0.2s ease, transform 0.2s ease;
+      cursor:pointer;
+    }
+
+    /* North County highlight */
+    .north-county {
+      fill:#FFE680; /* lighter yellow */
+      stroke:#000;
+      stroke-width:2;
+      filter:url(#county-glow);
+      transition:fill 0.2s ease, transform 0.2s ease;
+      cursor:pointer;
+    }
+
+    /* Hover effect */
+    .county:hover,
+    .north-county:hover {
+      fill:#FFD84D;
+      transform:scale(1.02);
+    }
+
+    /* Labels */
+    .label {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size:22px;
+      fill:#FFFFFF;
+      font-weight:600;
+      text-shadow:0 0 4px rgba(0,0,0,0.8);
+      pointer-events:none;
+    }
+  </style>
+
+  <!-- ====== GLOW FILTER ====== -->
+  <defs>
+    <filter id="county-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect class="map-bg" x="0" y="0" width="800" height="800" />
+
+  <!-- ====== COUNTY SHAPES (stylized, not GIS-precise) ====== -->
+
+  <!-- Los Angeles County -->
+  <polygon class="county"
+           points="200,150 500,150 550,300 450,450 250,450 180,300">
+    <title>Los Angeles County — Full electrical service area</title>
+  </polygon>
+
+  <!-- Orange County -->
+  <polygon class="county"
+           points="250,450 450,450 480,550 300,600">
+    <title>Orange County — Residential and commercial electrical services</title>
+  </polygon>
+
+  <!-- Riverside County -->
+  <polygon class="county"
+           points="480,550 650,500 700,650 500,750 350,650 300,600">
+    <title>Riverside County — Inland Empire service area</title>
+  </polygon>
+
+  <!-- San Bernardino County -->
+  <polygon class="county"
+           points="550,300 750,250 780,450 650,500 480,550 450,450">
+    <title>San Bernardino County — Inland Empire service area</title>
+  </polygon>
+
+  <!-- San Diego County -->
+  <polygon class="county"
+           points="300,600 500,750 350,780 200,700 180,600">
+    <title>San Diego County — Greater San Diego electrical services</title>
+  </polygon>
+
+  <!-- North County San Diego (highlighted sub-region) -->
+  <polygon class="north-county"
+           points="250,620 380,680 300,720 220,660">
+    <title>North County San Diego — Oceanside, Carlsbad, Vista, San Marcos, Escondido, Encinitas, Solana Beach, Del Mar</title>
+  </polygon>
+
+  <!-- ====== LABELS ====== -->
+  <text x="290" y="260" class="label">Los Angeles</text>
+  <text x="320" y="520" class="label">Orange</text>
+  <text x="520" y="600" class="label">Riverside</text>
+  <text x="600" y="380" class="label">San Bernardino</text>
+  <text x="260" y="700" class="label">San Diego</text>
+  <text x="240" y="655" class="label">North County</text>
+
+</svg>
+  </section>
+
   <!-- WHY CHOOSE US -->
   <section class="why" id="why" aria-labelledby="why-heading">
     <div class="container">
